@@ -41,30 +41,7 @@ body {
     top: 10%;
     left: 30%;
     cursor : wait;
-    animation: animate 3s linear;
-    }
-
-@keyframes animate {
-    0% {
-        background: url(../images/Sans-titre.gif) no-repeat;
-    }
-    25% {
-        background: url(../images/Sans-titre.gif) no-repeat;
-    }
-    50% {
-        background: url(../images/Sans-titre.gif) no-repeat;
-    }
-    75% {
-        background: url(../images/Sans-titre.gif) no-repeat;
-    }
-    100% {
-        background: url(../images/Sans-titre.gif) no-repeat;
-    }
-
 }
-
-
-
 
 
 header {
