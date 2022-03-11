@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "prettier .",
+    "lint": "prettier --check .",
     "format": "prettier --write .",
     "dev": "parcel index.html",
     "build": "parcel build index.html --public-url ./"
