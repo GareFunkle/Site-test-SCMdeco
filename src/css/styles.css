@@ -40,7 +40,7 @@ body {
 .loader {
   position: relative;
   z-index: 9999;
-  background: url(../images/Sans-titre.gif) no-repeat;
+  background: url(../static/images/Sans-titre.gif) no-repeat;
   height: 100%;
   width: 100%;
   top: 10%;
@@ -63,7 +63,7 @@ header {
 .banner {
   position: relative;
   min-height: 100vh;
-  background: url(../images/banner.jpg) 100%;
+  background: url(../static/images/banner.jpg) 100%;
   background-size: 100%;
   min-height: 900px;
   background-repeat: no-repeat;
@@ -254,7 +254,7 @@ nav ul li a:hover {
     align-items: center;
     top: 0;
     left: 20%;
-    background: url(../images/img3.jpg) 100%;
+    background: url(../static/images/img3.jpg) 100%;
     background-repeat: no-repeat;
     background-size: 100%;
     width: 800px;

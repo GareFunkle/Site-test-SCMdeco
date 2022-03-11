@@ -165,23 +165,23 @@ nav ul li a:hover {
 } */
 
 .renov1 {
-  background-image: url(../images/img1.jpg);
+  background-image: url(../static/images/img1.jpg);
   margin: 10px;
   transition: 0.3s;
 }
 
 .renov2 {
-  background-image: url(../images/img2.jpg);
+  background-image: url(../static/images/img2.jpg);
   margin: 10px;
 }
 
 .renov3 {
-  background-image: url(../images/img3.jpg);
+  background-image: url(../static/images/img3.jpg);
   margin: 10px;
 }
 
 .renov4 {
-  background-image: url(../images/img4.jpg);
+  background-image: url(../static/images/img4.jpg);
   margin: 10px;
 }
 
