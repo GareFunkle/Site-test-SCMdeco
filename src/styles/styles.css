@@ -155,12 +155,12 @@ nav ul li a:hover {
 }
 
 .text {
-  position: relative;
+  position: absolute;
   display: flex;
-  right: 0;
-  top: 20vh;
+  left: 20px;
+  top: 60vh;
   background: #30475e;
-  width: 900px;
+  max-width: 900px;
   height: 220px;
   opacity: 0.9;
   border-radius: 5px;
