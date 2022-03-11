@@ -1,0 +1,23 @@
+{
+  "name": "site-test-scmdeco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GareFunkle/Site-test-SCMdeco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GareFunkle/Site-test-SCMdeco/issues"
+  },
+  "homepage": "https://github.com/GareFunkle/Site-test-SCMdeco#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
