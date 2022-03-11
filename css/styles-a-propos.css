@@ -21,7 +21,7 @@ body {
 
 header {
     position: relative;
-    max-width: 1800px;
+    max-width: 100%;
     margin: 0px auto;
     padding: 10px;
     background: #fff;
