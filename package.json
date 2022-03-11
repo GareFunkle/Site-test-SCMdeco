@@ -6,8 +6,8 @@
   "scripts": {
     "lint": "prettier --check .",
     "format": "prettier --write .",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./"
   },
   "repository": {
     "type": "git",
