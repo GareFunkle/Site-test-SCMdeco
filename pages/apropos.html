@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A-Propos</title>
-    <link rel="stylesheet" href="../css/styles-a-propos.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-</head>
+    <link rel="stylesheet" href="../css/styles-a-propos.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <section class="banner">
-        <header>
-            <a href="#" class="logo"><img src="../images/logo.png" alt=""></a>
-            <div class="menu-toggle"></div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../pages/realisations.html">Nos Réalisation</a></li>
-                    <li><a href="../pages/apropos.html" class="active">À propos</a></li>
-                    <li><a href="../pages/contactez-nous.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="clearfix"></div>
-        </header>
+      <header>
+        <a href="#" class="logo"><img src="../images/logo.png" alt="" /></a>
+        <div class="menu-toggle"></div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../pages/realisations.html">Nos Réalisation</a></li>
+            <li><a href="../pages/apropos.html" class="active">À propos</a></li>
+            <li><a href="../pages/contactez-nous.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="clearfix"></div>
+      </header>
     </section>
 
-
-
     <script
-    src="https://code.jquery.com/jquery-3.6.0.js"
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('.menu-toggle').click(function(){
-                $('.menu-toggle').toggleClass('active')
-                $('nav').toggleClass('active')
-            })
-        })
-  
+      $(document).ready(function () {
+        $(".menu-toggle").click(function () {
+          $(".menu-toggle").toggleClass("active");
+          $("nav").toggleClass("active");
+        });
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
