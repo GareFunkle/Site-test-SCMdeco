@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="../styles/styles-contact.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>Contactez-Nous</title>
+  </head>
+
+  <body>
+    <section class="banner">
+      <header>
+        <a href="#" class="logo"><img src="../static/images/logo.png" alt="" /></a>
+        <div class="menu-toggle"></div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../pages/realisations.html">Nos Réalisation</a></li>
+            <li><a href="../pages/apropos.html">À propos</a></li>
+            <li>
+              <a href="../pages/contactez-nous.html" class="active">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="clearfix"></div>
+      </header>
+    </section>
+    <div class="contactUs">
+      <div class="title">
+        <h2>Contact ou demande d'étude</h2>
+      </div>
+      <div class="box">
+        <!-- Form -->
+        <div class="contact form">
+          <h3>Envoyer un message</h3>
+          <form>
+            <div class="formBox">
+              <div class="row50">
+                <div class="inputBox">
+                  <span>Nom</span>
+                  <input type="text" placeholder="John" />
+                </div>
+                <div class="inputBox">
+                  <span>Prenom</span>
+                  <input type="text" placeholder="Doe" />
+                </div>
+              </div>
+
+              <div class="row50">
+                <div class="inputBox">
+                  <span>Email</span>
+                  <input type="text" placeholder="johndoe@hey.fr" />
+                </div>
+                <div class="inputBox">
+                  <span>Téléphone</span>
+                  <input type="text" placeholder="+33" />
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="inputBox">
+                  <span>Message</span>
+                  <textarea placeholder="ecrire un message"></textarea>
+                </div>
+              </div>
+              <div class="row100">
+                <div class="inputBox">
+                  <input type="submit" value="Envoyée" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- InfoBox -->
+        <div class="contact info">
+          <h3>Informations</h3>
+          <div class="infoBox">
+            <div>
+              <span>
+                <ion-icon name="location"></ion-icon>
+              </span>
+              <p>1 Avenue de France, 06400 Cannes <br />France</p>
+            </div>
+            <div>
+              <span>
+                <ion-icon name="mail"></ion-icon>
+              </span>
+              <a href="mailto:test@hey.fr">test@hey.fr</a>
+            </div>
+            <div>
+              <span>
+                <ion-icon name="call"></ion-icon>
+              </span>
+              <a href="tel:+330610101010">+33 06 10 10 10 10</a>
+            </div>
+            <!-- Reseau Sociaux -->
+            <ul class="sci">
+              <li>
+                <a href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="contact map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.972915390492!2d7.007988415775446!3d43.56544746611838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce81f7729d5c0b%3A0x5e34287f81eb0a8c!2s1%20Av.%20de%20France%2C%2006400%20Cannes!5e0!3m2!1sfr!2sfr!4v1646474174785!5m2!1sfr!2sfr"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.menu-toggle').click(function () {
+          $('.menu-toggle').toggleClass('active');
+          $('nav').toggleClass('active');
+        });
+      });
+    </script>
+  </body>
+</html>

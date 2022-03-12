@@ -1,0 +1,30 @@
+{
+  "name": "site-test-scmdeco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GareFunkle/Site-test-SCMdeco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GareFunkle/Site-test-SCMdeco/issues"
+  },
+  "homepage": "https://github.com/GareFunkle/Site-test-SCMdeco#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.5.1"
+  }
+}
