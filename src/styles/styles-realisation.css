@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
 * {
   margin: 0;
@@ -7,13 +7,7 @@
 }
 
 body {
-  background: linear-gradient(
-    90deg,
-    #fff 15%,
-    #fff 50%,
-    #fff 30%,
-    #dddddd 100%
-  );
+  background: linear-gradient(90deg, #fff 15%, #fff 50%, #fff 30%, #dddddd 100%);
 }
 
 header {
@@ -90,13 +84,13 @@ nav ul li a:hover {
     color: #30475e;
   }
   .menu-toggle::before {
-    content: " \f0c9";
+    content: ' \f0c9';
     font-family: fontAwesome;
     line-height: 40px;
   }
 
   .menu-toggle.active::before {
-    content: " \f00d";
+    content: ' \f00d';
   }
 
   nav {
@@ -165,29 +159,29 @@ nav ul li a:hover {
 } */
 
 .renov1 {
-  background-image: url(../images/img1.jpg);
+  background-image: url(../static/images/img1.jpg);
   margin: 10px;
   transition: 0.3s;
 }
 
 .renov2 {
-  background-image: url(../images/img2.jpg);
+  background-image: url(../static/images/img2.jpg);
   margin: 10px;
 }
 
 .renov3 {
-  background-image: url(../images/img3.jpg);
+  background-image: url(../static/images/img3.jpg);
   margin: 10px;
 }
 
 .renov4 {
-  background-image: url(../images/img4.jpg);
+  background-image: url(../static/images/img4.jpg);
   margin: 10px;
 }
 
 .no-grid:hover:before,
 .no-grid:hover:after {
-  content: "";
+  content: '';
   position: absolute;
   top: -6px;
   left: -6px;
