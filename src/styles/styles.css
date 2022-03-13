@@ -19,8 +19,8 @@ body {
 }
 
 .loader-wrapper {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -32,30 +32,33 @@ body {
 }
 
 .loader {
-  position: relative;
   z-index: 9999;
   background: url(../static/images/Sans-titre.gif) no-repeat;
+  background-position: center center;
+  background-size: contain;
   height: 100%;
   width: 100%;
-  top: 10%;
-  left: 30%;
   cursor: wait;
 }
 
 header {
-  position: relative;
+  position: fixed;
   max-width: 100%;
-  margin: 0px auto;
+  left: 0;
+  right: 0;
+  margin: 10px auto;
   padding: 10px;
   background: #fff;
   box-sizing: border-box;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   opacity: 0.9;
+  z-index: 1;
 }
 
 .banner {
   position: relative;
+  margin-top: 0;
   min-height: 100vh;
   background: url(../static/images/banner.jpg) 100%;
   background-size: 100%;
@@ -90,7 +93,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  margin: 10px 0;
+  margin: 10px 10px;
   padding: 10px 20px;
   text-decoration: none;
   color: #30475e;
@@ -148,7 +151,7 @@ nav ul li a:hover {
   }
 
   nav.active ul li a {
-    margin: 0;
+    margin: 5px;
   }
 }
 
@@ -194,7 +197,7 @@ nav ul li a:hover {
   align-items: center;
   flex-direction: column;
   background: #fff;
-  border-radius: 50%;
+  border-radius: 15px;
   max-width: 100%;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
@@ -307,4 +310,27 @@ footer a {
   color: #fff;
   text-decoration: none;
   font-size: 1.5em;
+}
+
+
+@media (max-width: 991px) {
+  body {
+    background: #fff;
+  }
+  
+  .banner{
+    background-size: 100%;
+    min-width: 100px;
+    max-height: 450px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+    margin-right: 15px;
+
+  }
+
+  .text {
+    min-width:350px;
+    
+  }
 }
