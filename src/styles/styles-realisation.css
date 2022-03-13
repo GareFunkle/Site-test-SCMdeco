@@ -126,14 +126,14 @@ nav ul li a:hover {
 
 .section-title-wrap {
   position: relative;
-  padding: 40px 100px;
+  padding: 40px 62px;
 }
 
 .section-title {
   position: relative;
-  left: 60px;
+  left: 0;
   background: #30475e;
-  margin-top: 95px;
+  margin-top: 150px;
   width: 290px;
   padding: 10px;
   border-radius: 5px;
@@ -161,6 +161,10 @@ nav ul li a:hover {
   max-width: 100%;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .no-grid {
@@ -171,15 +175,11 @@ nav ul li a:hover {
 }
 
 .no-grid:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin: 20px;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-
-/* .no-grid:hover {
-    min-width: 430px;
-    height: 510px;
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
-    transition: 0.2s;
-} */
 
 .renov1 {
   background-image: url(../static/images/img1.jpg);
@@ -209,16 +209,16 @@ footer {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 footer p {
-  /* background: #30475e; */
   padding: 10px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* color: #fff; */
+  color: #30475e;
   font-size: 1em;
 }
 
@@ -229,4 +229,29 @@ footer a {
   color: #fff;
   text-decoration: none;
   font-size: 1.5em;
+}
+
+@media (max-width: 991px) {
+  body {
+    background: #fff;
+  }
+
+  .section-title-wrap {
+    padding: 40px 27px;
+  }
+
+  .portofolio {
+    padding: 15px;
+  }
+
+  .renov {
+    flex-direction: column;
+  }
+
+  .no-grid:hover {
+    margin: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
 }
