@@ -162,7 +162,7 @@ nav ul li a:hover {
   top: 20vh;
   background: #30475e;
   width: 900px;
-  height: 220px;
+  height: 260px;
   opacity: 0.9;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
@@ -179,7 +179,7 @@ nav ul li a:hover {
 
 .btcontact {
   position: absolute;
-  top: 50vh;
+  top: 43vh;
   left: 50px;
 }
 
@@ -190,21 +190,27 @@ nav ul li a:hover {
   border-radius: 15px;
   font-size: 2em;
   text-decoration: none;
+  opacity: 0.9;
   transition: 0.3s;
 }
 
 .btcontact a:hover {
   padding: 20px;
+  opacity: 1;
   transition: 0.3s;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .who {
+  margin: 70px;
+  background-color: #fff;
   margin-top: 75px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .who h3 {
@@ -218,9 +224,9 @@ nav ul li a:hover {
 }
 
 .btabout {
-  margin-top: -40px;
+  margin-top: 230px;
   position: absolute;
-  left: 70px;
+  left: 140px;
 }
 
 .btabout a {
@@ -304,14 +310,68 @@ nav ul li a:hover {
 }
 
 .hardpoint {
+  background: #fff;
+  margin: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .hardpoint h3 {
   color: #30475e;
   font-size: 3em;
+}
+
+.portofolio {
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.renov {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.no-grid {
+  min-width: 350px;
+  height: 500px;
+  flex: 1;
+  transition: 0.5s;
+}
+
+.no-grid:hover {
+  margin: 20px;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.renov1 {
+  background-image: url(../static/images/img1.jpg);
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.renov2 {
+  background-image: url(../static/images/img2.jpg);
+  margin: 10px;
+}
+
+.renov3 {
+  background-image: url(../static/images/img3.jpg);
+  margin: 10px;
 }
 
 footer {
@@ -325,22 +385,21 @@ footer {
 }
 
 footer p {
-  padding: 10px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #30475e;
-  font-size: 1.2em;
+  font-size: 0.7em;
 }
 
 footer a {
   background: #30475e;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 0.7em;
 }
 
 @media (max-width: 991px) {
