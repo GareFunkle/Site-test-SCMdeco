@@ -12,3 +12,7 @@
   padding: 0;
   text-decoration: none;
 }
+
+body {
+  background: linear-gradient(90deg, #fff 15%, #fff 50%, #fff 30%, #dddddd 100%);
+}

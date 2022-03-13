@@ -200,9 +200,7 @@ nav ul li a:hover {
   border-radius: 15px;
   max-width: 100%;
   height: auto;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
-    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
-    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .no-grid {
@@ -211,6 +209,10 @@ nav ul li a:hover {
   margin: 15px;
   flex: 1;
   transition: 0.5s;
+}
+
+.no-grid:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .renov h3 {
@@ -232,6 +234,7 @@ nav ul li a:hover {
 
 .renov h3:hover {
   color: #30475e;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .renov p {
