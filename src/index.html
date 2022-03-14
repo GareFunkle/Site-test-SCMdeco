@@ -33,14 +33,15 @@
       </header>
       <div class="text">
         <h2>Notre savoir faire au service de votre intérieur depuis 1999.</h2>
-      </div>
-      <div class="btcontact">
-        <a href="pages/contactez-nous.html">Demander un devis</a>
+        <div class="btcontact">
+          <a href="pages/contactez-nous.html">Demander un devis</a>
+        </div>
       </div>
     </section>
 
     <section class="who">
       <h3>Qui sommes-nous ?</h3>
+      <div class="line"></div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -92,11 +93,48 @@
 
     <section class="hardpoint">
       <h3>Nos points forts</h3>
-      <div class="portofolio">
-        <a class="renov renov1 no-grid"></a>
-        <a class="renov renov2 no-grid"></a>
-        <a class="renov renov3 no-grid"></a>
+      <!-- image slider start -->
+      <div class="slider">
+        <div class="slides">
+          <!-- radio button start -->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <!-- radio button end -->
+          <!-- slide image start-->
+          <div class="slide first">
+            <img src="static/images/img1.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="static/images/img2.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="static/images/img3.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="static/images/img4.jpg" alt="" />
+          </div>
+          <!-- slide image end-->
+          <!-- automatic navigation start -->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!-- automatic navigation end -->
+        </div>
+        <!-- manual navigation start -->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-- manual navigation end -->
       </div>
+      <!-- image slider end -->
     </section>
 
     <section>
@@ -132,6 +170,16 @@
           $('.loader-wrapper').remove(); //makes page more lightweight
         });
       }
+    </script>
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 5000);
     </script>
   </body>
 </html>

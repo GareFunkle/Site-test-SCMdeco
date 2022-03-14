@@ -158,6 +158,7 @@ nav ul li a:hover {
 .text {
   position: relative;
   display: flex;
+  flex-direction: column;
   right: 0;
   top: 20vh;
   background: #30475e;
@@ -178,8 +179,8 @@ nav ul li a:hover {
 }
 
 .btcontact {
-  position: absolute;
-  top: 43vh;
+  position: relative;
+  bottom: 25px;
   left: 50px;
 }
 
@@ -210,12 +211,22 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .who h3 {
   color: #30475e;
   font-size: 3em;
+}
+
+.line {
+  top: 30px;
+  position: relative;
+  background: #30475e;
+  width: 100px;
+  height: 5px;
+  border-radius: 50%;
 }
 
 .who p {
@@ -253,7 +264,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  margin: 10px;
 }
 
 .renov {
@@ -270,8 +281,8 @@ nav ul li a:hover {
 }
 
 .no-grid {
-  min-width: 80px;
-  height: 600px;
+  max-width: 800px;
+  height: 500px;
   margin: 15px;
   flex: 1;
   transition: 0.5s;
@@ -312,66 +323,126 @@ nav ul li a:hover {
 .hardpoint {
   background: #fff;
   margin: 75px;
+  max-height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .hardpoint h3 {
+  margin-top: 50px;
   color: #30475e;
   font-size: 3em;
 }
 
-.portofolio {
-  min-height: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px;
-}
-
-.renov {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  border-radius: 15px;
-  max-width: 100%;
+.slider {
+  max-width: 800px;
   height: auto;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  margin: 50px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.no-grid {
-  min-width: 350px;
+.slides {
+  width: 500%;
   height: 500px;
-  flex: 1;
-  transition: 0.5s;
+  display: flex;
 }
 
-.no-grid:hover {
-  margin: 20px;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+.slides input {
+  display: none;
 }
 
-.renov1 {
-  background-image: url(../static/images/img1.jpg);
-  margin: 10px;
-  transition: 0.3s;
+.slide {
+  width: 20%;
+  transition: 2s;
 }
 
-.renov2 {
-  background-image: url(../static/images/img2.jpg);
-  margin: 10px;
+.slide img {
+  width: 800px;
+  height: 500px;
 }
 
-.renov3 {
-  background-image: url(../static/images/img3.jpg);
-  margin: 10px;
+/* css for manual navigation */
+
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #30475e;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+/* css for automatic navigation */
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  border: 2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #30475e;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #30475e;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #30475e;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #30475e;
 }
 
 footer {
@@ -400,6 +471,13 @@ footer a {
   color: #fff;
   text-decoration: none;
   font-size: 0.7em;
+  transition: 0.2s;
+}
+
+footer a:hover {
+  padding: 7px;
+  transition: 0.2s;
+  box-shadow: rgb(38, 57, 77) 0px 10px 15px -10px;
 }
 
 @media (max-width: 991px) {
