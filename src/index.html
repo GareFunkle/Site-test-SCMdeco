@@ -93,6 +93,7 @@
 
     <section class="hardpoint">
       <h3>Nos points forts</h3>
+      <div class="line"></div>
       <!-- image slider start -->
       <div class="slider">
         <div class="slides">
@@ -135,6 +136,30 @@
         <!-- manual navigation end -->
       </div>
       <!-- image slider end -->
+      <div class="btdecouvrir">
+        <a href="pages/realisations.html">Decouvrir plus</a>
+      </div>
+    </section>
+
+    <section>
+      <div id="counter">
+        <div class="item">
+          <h1 class="count" data-number="50"></h1>
+          <h3 class="texte">Chantier</h3>
+        </div>
+        <div class="item">
+          <h1 class="count" data-number="15"></h1>
+          <h3 class="texte">Année d'experience</h3>
+        </div>
+        <div class="item">
+          <h1 class="count" data-number="90"></h1>
+          <h3 class="texte">Projet terminés</h3>
+        </div>
+        <div class="item">
+          <h1 class="count" data-number="90"></h1>
+          <h3 class="texte">Client satisfait</h3>
+        </div>
+      </div>
     </section>
 
     <section>
@@ -180,6 +205,28 @@
           counter = 1;
         }
       }, 5000);
+    </script>
+
+    <script type="text/javascript">
+      let count = document.querySelectorAll('.count');
+      let arr = Array.from(count);
+
+      arr.map(function (item) {
+        let startnumber = 0;
+
+        function counterup() {
+          startnumber++;
+          item.innerHTML = startnumber;
+
+          if (startnumber == item.dataset.number) {
+            clearInterval(stop);
+          }
+        }
+
+        let stop = setInterval(function () {
+          counterup();
+        }, 50);
+      });
     </script>
   </body>
 </html>
