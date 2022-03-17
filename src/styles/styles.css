@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'Cormorant SC', serif;
 }
 
 body {
@@ -214,7 +213,6 @@ nav ul li a:hover {
 .who h3 {
   color: #30475e;
   font-size: 3em;
-  font-family: 'Cormorant Infant', serif;
 }
 
 .line {
@@ -297,7 +295,6 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  font-family: 'Cormorant Infant', serif;
 }
 
 .renov h3::before {
@@ -334,7 +331,6 @@ nav ul li a:hover {
   margin-top: 50px;
   color: #30475e;
   font-size: 3em;
-  font-family: 'Cormorant Infant', serif;
 }
 
 .slider {
@@ -497,7 +493,6 @@ nav ul li a:hover {
 }
 #counter .item h3 {
   color: #30475e;
-  font-family: 'Cormorant Infant', serif;
   /* text-transform: capitalize; */
 }
 
